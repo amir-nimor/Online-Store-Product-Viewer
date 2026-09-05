@@ -1,4 +1,8 @@
 package ir.maktabsharif.model;
 
-public enum Categoru {
+public enum Category {
+
+    Programing,
+    English,
+    Math
 }
