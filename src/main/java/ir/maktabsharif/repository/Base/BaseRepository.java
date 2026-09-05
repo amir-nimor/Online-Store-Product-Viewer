@@ -1,4 +1,4 @@
-package ir.maktabsharif.repository;
+package ir.maktabsharif.repository.Base;
 
 import ir.maktabsharif.model.BaseModel;
 
