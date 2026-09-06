@@ -7,7 +7,7 @@ import java.util.function.Function;
 
 public class HibernateUtil {
 
-    private static final String PERSISTENCE_UNIT = "";
+    private static final String PERSISTENCE_UNIT = "ProductionStore";
 
 
     private static EntityManagerFactory emf;

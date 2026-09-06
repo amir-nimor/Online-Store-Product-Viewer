@@ -3,4 +3,62 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
+
+
+    <servlet>
+        <servlet-name>AllProducts</servlet-name>
+        <servlet-class>ir.maktabsharif.onlinestoreproductviewer.AllProducts</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AllProducts</servlet-name>
+        <url-pattern>/AllProduct</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>ElectronicsProducts</servlet-name>
+        <servlet-class>ir.maktabsharif.onlinestoreproductviewer.ElectronicsProducts</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ElectronicsProducts</servlet-name>
+        <url-pattern>/electronics</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>SortedByPrice</servlet-name>
+        <servlet-class>ir.maktabsharif.onlinestoreproductviewer.SortedByPrice</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>SortedByPrice</servlet-name>
+        <url-pattern>/SortedPrice</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>Affordable</servlet-name>
+        <servlet-class>ir.maktabsharif.onlinestoreproductviewer.AffordableProducts</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Affordable</servlet-name>
+        <url-pattern>/Affordable</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Statistic</servlet-name>
+        <servlet-class>ir.maktabsharif.onlinestoreproductviewer.Statistics</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Statistic</servlet-name>
+        <url-pattern>/Statistic</url-pattern>
+    </servlet-mapping>
+
+
+
 </web-app>
