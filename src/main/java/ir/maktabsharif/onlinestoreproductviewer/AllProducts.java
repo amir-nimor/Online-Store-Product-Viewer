@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
+@WebServlet(name = "/Allproduct")
 public class AllProducts extends HttpServlet {
 
 
@@ -32,19 +33,19 @@ public class AllProducts extends HttpServlet {
         List<Product> products = service.findAll();
 
 
-        out.println("<center>");
-
-        out.println("<h2>All products</h2>");
-
-        products.forEach(p ->  out.println("<li>"+p+"</li>"));
-
-        out.println("<a href=\"./index.jsp\">go back</a>");
-
-        out.println("</center>");
-
-//        req.setAttribute("products", products);
+//        out.println("<center>");
 //
-//        req.getRequestDispatcher("/WEB-INF/page/AllProducts.jsp")
-//                .forward(req,resp);
+//        out.println("<h2>All products</h2>");
+//
+//        products.forEach(p ->  out.println("<li>"+p+"</li>"));
+//
+//        out.println("<a href=\"./index.jsp\">go back</a>");
+//
+//        out.println("</center>");
+
+        req.setAttribute("Products", products);
+
+        req.getRequestDispatcher("/WEB-INF/page/AllProducts.jsp")
+                .forward(req,resp);
     }
 }

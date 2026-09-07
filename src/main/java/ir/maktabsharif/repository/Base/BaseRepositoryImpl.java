@@ -71,7 +71,7 @@ public abstract class BaseRepositoryImpl<T extends BaseModel<ID>, ID extends Ser
     public List<T> findAll() {
         try {
             return HibernateUtil.read(em -> {
-                return em.createQuery("from Product ",entityType)
+                return em.createQuery("from  "+entityType.getSimpleName())
                         .getResultList();
             });
         }catch (HibernateException e){

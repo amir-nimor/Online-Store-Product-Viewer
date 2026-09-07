@@ -28,7 +28,14 @@ public class Statistics extends HttpServlet {
 
         out.println("<body>");
 
-        out.println(HibernateUtil.getEm().createNamedQuery("Statistics").getSingleResult());
+
+        List integers = HibernateUtil.getEm().createNamedQuery("Statistics").getResultList();
+
+
+
+        integers.forEach(i -> out.println(i.toString()));
+
+        out.println(HibernateUtil.getEm().createNamedQuery("Statistics").executeUpdate());
 
         out.println("<a href=\"./index.jsp\">go back</a>");
 

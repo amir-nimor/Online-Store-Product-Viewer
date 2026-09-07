@@ -12,11 +12,11 @@
 <br/>
 
 <center style="background-color: blue" >
-  <a style="color: crimson" href="AllProduct">All product</a><br>
-  <a style="color: black" href="electronics"> Electronics Products</a><br>
-  <a style="color: rebeccapurple" href="Affordable"> Affordable</a><br>
-  <a style="color: saddlebrown" href="SortedPrice">SorteByPrice</a><br>
-  <a style="color: peru" href="Statistic">Statistic</a><br>
+  <a href="AllProduct" ><button type="button" style="background-color: crimson"> All product </button></a><br>
+  <a href="electronics" ><button type="button" style="background-color: crimson"> electronics </button></a><br>
+  <a href="Affordable" ><button type="button" style="background-color: crimson"> Affordable </button></a><br>
+  <a href="SortedPrice" ><button type="button" style="background-color: crimson"> SortedPrice </button></a><br>
+  <a href="Statistic" ><button type="button" style="background-color: crimson"> Statistic </button></a><br>
 </center>
 
 </body>

@@ -14,11 +14,11 @@
 <h1>AllProducts</h1>
 <center>
     <h2>All products</h2>
-
-    <c:forEach var="product" items="${products}">
-        <li>${product}</li>
+    <li>
+    <c:forEach var="product" items="${Products}">
+       <li>${Products}</li>
     </c:forEach>
-
+    </li>
     <a href="./index.jsp">go back</a>
 </center>
 
